@@ -2,7 +2,10 @@
 
 <img src="horse_nobg.png" style="width:300px;height:400px;" class="center">
 
-<form name="link-submission" method="POST" data-netlify="true" netlify>
+<form name="link-submission" netlify-honeypot="bot-field" method="POST" data-netlify="true" netlify>
+  <p class=“u-visually-hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+  </p>
   <p>
     <label>Link to be shortened: <input type="url" name="URL" /></label>   
   </p>
